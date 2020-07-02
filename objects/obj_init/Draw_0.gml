@@ -1,13 +1,17 @@
-/// @description Insert description here
-// You can write your code in this editor
-surface_clear(surfA,surfB);
+///@desc Render scene
 
-surface_set_target(surfA);
-draw_circle(mouse_x,mouse_y,2,false);
-surface_reset_target();
-surface_set_target(surfB);
-draw_circle(mouse_x,mouse_y,2,false);
-surface_reset_target();
+var cx,cy,sx,sy;
+cx = dcos(dir_x);
+cy = dcos(dir_y);
+sx = dsin(dir_x);
+sy = dsin(dir_y);
 
-draw_surface_stretched(surfA,0,0,256,256);
-draw_surface_stretched(surfA,256,0,256,256);
+view = matrix_build_lookat(-cx*cy*radius,-sx*cy*radius,max(2-sy*radius,.1),1,0,2,0,0,1);
+matrix_set(matrix_projection,proj);
+
+mrt_surfaces_set();
+matrix_set(matrix_view,view);
+matrix_set(matrix_projection,proj);
+
+vertex_submit(scene,pr_trianglelist,tex_scene);
+mrt_surfaces_reset();
