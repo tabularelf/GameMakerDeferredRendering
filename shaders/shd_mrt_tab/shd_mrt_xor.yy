@@ -1,8 +1,8 @@
 {
   "type": 3,
   "parent": {
-    "name": "MRTs",
-    "path": "folders/Shaders/MRTs.yy",
+    "name": "Shaders",
+    "path": "folders/Shaders.yy",
   },
   "resourceVersion": "1.0",
   "name": "shd_mrt_xor",

@@ -1,3 +1,3 @@
 ///@desc Clean up
 
-mrt_surfaces_destroy();
+mrt_system_destroy(mrt);

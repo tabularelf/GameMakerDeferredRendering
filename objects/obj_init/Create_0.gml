@@ -1,5 +1,7 @@
 ///@desc Initialize scene:
 
+mrt = mrt_system_create(1280,720);
+
 #region Camera
 
 gpu_set_ztestenable(1);
@@ -17,7 +19,7 @@ zoom = 0;
 matrix_set(matrix_view,view);
 matrix_set(matrix_projection,proj);
 
-mrt_surfaces_create(1280,720);
+//mrt_surfaces_create(1280,720);
 #endregion
 
 #region Scene

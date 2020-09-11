@@ -1,3 +1,3 @@
 ///@desc Draw surfaces
 
-mrt_surfaces_draw(1);
+mrt_system_draw(mrt, true);

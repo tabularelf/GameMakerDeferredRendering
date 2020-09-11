@@ -1,8 +1,12 @@
 {
-    "id": "fb286356-f643-4220-907a-b0fa04c121f6",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "vert_floor",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Vertex Functions",
+    "path": "folders/Scripts/Vertex Functions.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "vert_floor",
+  "tags": [],
+  "resourceType": "GMScript",
 }

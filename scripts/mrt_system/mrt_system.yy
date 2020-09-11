@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Vertex Functions",
-    "path": "folders/Scripts/Vertex Functions.yy",
+    "name": "MRT",
+    "path": "folders/Scripts/MRT.yy",
   },
   "resourceVersion": "1.0",
-  "name": "vert_icosahedron",
+  "name": "mrt_system",
   "tags": [],
   "resourceType": "GMScript",
 }
