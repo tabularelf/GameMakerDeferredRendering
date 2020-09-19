@@ -17,6 +17,9 @@ struct pixel
 	float4 normal : SV_TARGET2;
 };
 
+Texture2D texture1		 : register(t1);
+SamplerState normalMap	 : register(s1);
+
 float4 pack_depth(float depth)
 {
 	float d = depth;//(depth-cam_near)/(cam_far-cam_near);

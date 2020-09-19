@@ -1,0 +1,2 @@
+-GLSL ES Extensions seem to be natively supported in GLSL. 
+Such as for example, dfdx and dfdy 

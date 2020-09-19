@@ -3,6 +3,9 @@
 function mrt_system_struct(_shader, _width, _height) constructor {
 	
 	shader_mrt_builder	= _shader;
+	// Universal Uniforms for each of the textures for our models
+	//shader_mrt_normal_sampler = shader_get_sampler_index(_shader,"uNormalSampler");
+	//shader_mrt_specular_sampler = shader_get_sampler_index(_shader,"uSpecularSampler");
 	shader_mrt_type		= os_type == os_windows ? "HLSL" : "GLSL";
 	
 	width = _width;
@@ -44,6 +47,7 @@ function mrt_system_struct(_shader, _width, _height) constructor {
 		surface_set_target_ext(0,surf_diffuse);
 		surface_set_target_ext(1,surf_depth);
 		surface_set_target_ext(2,surf_normal);
+		//surface_set_target_ext(3,surf_specular);
 
 		draw_clear_alpha(0,0);
 		gpu_set_blendenable(false);

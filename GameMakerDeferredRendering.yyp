@@ -19,12 +19,10 @@
     {"id":{"name":"vert_floor","path":"scripts/vert_floor/vert_floor.yy",},"order":4,},
     {"id":{"name":"vert_block","path":"scripts/vert_block/vert_block.yy",},"order":5,},
     {"id":{"name":"vert_icosahedron","path":"scripts/vert_icosahedron/vert_icosahedron.yy",},"order":6,},
-    {"id":{"name":"shd_hlsl_mrt","path":"shaders/shd_hlsl_mrt/shd_hlsl_mrt.yy",},"order":0,},
     {"id":{"name":"mrt_struct","path":"scripts/mrt_struct/mrt_struct.yy",},"order":5,},
     {"id":{"name":"shd_mrt_xor","path":"shaders/shd_mrt_xor/shd_mrt_xor.yy",},"order":1,},
     {"id":{"name":"obj_init","path":"objects/obj_init/obj_init.yy",},"order":0,},
     {"id":{"name":"room_example","path":"rooms/room_example/room_example.yy",},"order":0,},
-    {"id":{"name":"Plans","path":"notes/Plans/Plans.yy",},"order":0,},
     {"id":{"name":"Current MRT notes","path":"notes/Current MRT notes/Current MRT notes.yy",},"order":1,},
   ],
   "Options": [

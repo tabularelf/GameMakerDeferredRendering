@@ -14,6 +14,7 @@ mrt_system_set(mrt);
 matrix_set(matrix_view,view);
 matrix_set(matrix_projection,proj);
 
+//mrt_setup_textures(mrt,sprite_get_texture(tex_stone_floor_normal,0));
 vertex_submit(scene,pr_trianglelist,tex_scene);
 mrt_system_reset();
 //mrt_surfaces_reset();

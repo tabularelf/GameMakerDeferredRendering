@@ -90,3 +90,8 @@ function mrt_system_draw(_struct) {
 		gpu_set_colorwriteenable(1,1,1,1);
 	}	
 }
+
+function mrt_setup_textures(_mrt, _normal,_specular) {
+	shader_set_uniform_f(_mrt.shader_mrt_normal_sampler, _normal);
+	shader_set_uniform_f(_mrt.shader_mrt_specular_sampler, _specular);
+}

@@ -1,3 +1,0 @@
-1. Develop HLSL Shaders
--GLSL ES shaders for anything that can be easily done without HLSL/GLSL.
-2. Work towards GLSL Shaders
