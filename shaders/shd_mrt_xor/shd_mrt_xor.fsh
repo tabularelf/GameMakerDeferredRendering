@@ -1,5 +1,5 @@
 #define cam_near .001
-#define cam_far 10000
+#define cam_far 10000.
 
 struct fragment 
 {
@@ -17,22 +17,23 @@ struct pixel
 	float4 normal : SV_TARGET2;
 };
 
-Texture2D texture1		 : register(t1);
-SamplerState normalMap	 : register(s1);
-
 float4 pack_depth(float depth)
 {
-	float d = depth;//(depth-cam_near)/(cam_far-cam_near);
+	float d = (depth-cam_near)/(cam_far-cam_near);
 	return frac(floor(d*255.*float4(1,255,255*255,255*255*255))/255.);
 }
+
+Texture2D    tex_normal : register(t1);
+SamplerState sam_normal : register(s1);
 
 pixel main(fragment input)
 {
 	pixel output;
-    float4 diffuse = gm_BaseTextureObject.Sample(gm_BaseTexture, input.coord);
+    float4 sam_dif = gm_BaseTextureObject.Sample(gm_BaseTexture, input.coord);
+	float4 sam_nor =		   tex_normal.Sample(sam_normal,     input.coord);
 	float3 nor = normalize(input.normal);
 	
-    output.color = input.color * diffuse;
+    output.color = input.color * sam_dif;
 	output.depth =  pack_depth(input.view.z);
 	output.normal = float4(nor*.5+.5,1);
  
